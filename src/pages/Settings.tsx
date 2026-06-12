@@ -6,7 +6,7 @@ export default function Settings() {
   const { user } = useContext(UserContext);
   
   const [notifications, setNotifications] = useState(true);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode] = useState(true);
   const [language, setLanguage] = useState("Español");
 
   useEffect(() => {
