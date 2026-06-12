@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// Importamos nuestras herramientas recién creadas
 import { getAllMovies,} from "../services/movieService";
 import { type Movie } from "../interfaces/Movie";
 import "./Movies.css"; 

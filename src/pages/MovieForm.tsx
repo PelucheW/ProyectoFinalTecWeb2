@@ -51,7 +51,6 @@ export default function MovieForm() {
     setError("");
     setSuccess(false);
 
-    // VALIDACIONES (Requerimiento 5.7)
     if (!formData.title || !formData.overview || !formData.release_date) {
       setError("Todos los campos marcados con * son obligatorios.");
       return;

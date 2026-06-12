@@ -15,7 +15,6 @@ type SidebarProps = {
 };
 
 export default function Sidebar({menu}: SidebarProps){
-    // Traemos los datos del usuario logueado desde tu contexto
     const { user, logout } = useContext(UserContext);
     
     const navigate = useNavigate();
@@ -24,17 +23,14 @@ export default function Sidebar({menu}: SidebarProps){
         
         <aside className="sidebar">
             
-            {/* 1. LOGO */}
             <div className="sidebar-logo">
                 <h2> MOVIEGO </h2>
             </div>
-            {/* 2. MENÚ DE NAVEGACIÓN */}
             <div className="sidebar-menu">
                 <p className="menu-label">MENU</p>
                 <ul>
                     {menu.map((item, index) => (
                         <li key={index}>
-                            {/* NavLink nos permite saber si la ruta está activa */}
                         <NavLink 
                             to={item.path}
                             className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}

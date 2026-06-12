@@ -23,13 +23,11 @@ const defaultUser: User = {
 export const UserContext = createContext({} as UserContextType);
 
 export function UserProvider({ children }: { children: React.ReactNode }) {
-  // Inicializar el estado desde localStorage si existe
   const [user, setUser] = useState<User>(() => {
     const savedUser = localStorage.getItem("moviego_user");
     return savedUser ? JSON.parse(savedUser) : defaultUser;
   });
 
-  // Persistir en localStorage cada vez que el usuario cambie
   useEffect(() => {
     if (user.logged) {
       localStorage.setItem("moviego_user", JSON.stringify(user));
