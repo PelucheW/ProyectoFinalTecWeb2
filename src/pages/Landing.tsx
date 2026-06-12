@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import "./Home.css"; 
 import "./Landing.css"; 
 
 export default function Landing() {
@@ -34,7 +35,7 @@ export default function Landing() {
           <div className="stat-icon">⭐</div>
           <p className="stat-title">Reviews Reales</p>
         </div>
-        <div className="stat-icon-wrapper">
+        <div className="stat-card">
           <div className="stat-icon">🔥</div>
           <p className="stat-title">Tendencias Diarias</p>
         </div>
