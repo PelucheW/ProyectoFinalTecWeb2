@@ -1,0 +1,105 @@
+/* src/pages/MovieForm.css */
+
+.form-container {
+  padding: 20px;
+  color: var(--text-primary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.back-button {
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-card {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.form-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Mensajes de Alerta */
+.msg-error {
+  color: var(--accent-red);
+  background: rgba(251, 113, 133, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.msg-success {
+  color: var(--accent-green);
+  background: rgba(52, 211, 153, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Estructura del Formulario */
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        flex-direction: column;
+    }
+    .form-card {
+        padding: 20px;
+    }
+}
+
+.form-col {
+  flex: 1;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-muted);
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.textarea-resize {
+  resize: none;
+}
+
+.date-input {
+  color-scheme: dark; 
+}
+
+.submit-btn {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--accent-green);
+  color: var(--bg-dark);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}

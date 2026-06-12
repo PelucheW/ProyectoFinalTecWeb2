@@ -1,0 +1,26 @@
+:root{
+    --bg-dark: #0b1110;       /* El fondo negro/verdoso oscuro*/
+    --bg-card: #121c1a;       /*  tarjetas y sidebar */
+    --accent-green: #34d399;  /* El verde menta de los botones y textos  */
+    --accent-red: #fb7185;    /* El rojo del botón  */
+
+    /* Textos */
+    --text-primary: #ffffff;   /* Texto principal (títulos) */
+    --text-muted: #9ca3af;     /* Texto gris para descripciones y menús inactivos */
+    
+    /*Bordes y sombras */
+    --border-radius: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+}

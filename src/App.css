@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.main{
+    flex: 1;
+    padding: 30px;
+    margin-left: 260px; /* Ancho de la sidebar */
+    transition: margin-left 0.3s ease;
+}
+
+.layout-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-content {
+    flex: 1;
+}
+
+.max-width-800 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .main {
+        margin-left: 0;
+        padding: 20px;
+    }
+}

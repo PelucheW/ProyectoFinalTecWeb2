@@ -1,0 +1,102 @@
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-section {
+  background: var(--bg-card);
+  padding: 24px;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.settings-section-title {
+  margin-bottom: 20px;
+  color: var(--accent-green);
+  font-size: 18px;
+}
+
+.settings-profile-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.settings-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-green);
+  object-fit: cover;
+}
+
+.settings-profile-text p {
+  font-size: 18px;
+  fontWeight: bold;
+}
+
+.settings-profile-email {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.settings-role-tag {
+  font-size: 12px;
+  background: rgba(52, 211, 153, 0.1);
+  color: var(--accent-green);
+  padding: 4px 8px;
+  border-radius: 4px;
+  marginTop: 5px;
+  display: inline-block;
+}
+
+.settings-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.settings-option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent-green);
+  cursor: pointer;
+}
+
+.settings-select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-select {
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.btn-save-settings {
+  padding: 15px;
+  border-radius: 12px;
+  background: var(--accent-green);
+  color: var(--bg-dark);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: opacity 0.2s ease;
+}
+
+.btn-save-settings:hover {
+  opacity: 0.9;
+}
