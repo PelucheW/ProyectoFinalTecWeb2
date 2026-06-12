@@ -40,7 +40,7 @@ export default function Home() {
 
       <div className="dashboard-content">
         <div className="content-card">
-          <h3>📌 Tareas Pendientes</h3>
+          <h3>Tareas Pendientes</h3>
           <ul className="todo-list">
             <li>Revisar sinopsis de "Dune 2"</li>
             <li>Actualizar pósters de estrenos de esta semana</li>
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
 
         <div className="content-card">
-          <h3>🚀 Próximos Estrenos</h3>
+          <h3> Próximos Estrenos</h3>
           <ul className="todo-list">
             <li>Deadpool & Wolverine - <span>25 Jul</span></li>
             <li>Gladiador 2 - <span>15 Nov</span></li>
