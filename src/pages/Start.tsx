@@ -1,13 +1,16 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import "./Home.css"; 
+import "./Start.css"; 
 
 export default function Start() {
-  useEffect(() => {
-    document.title = "Inicio | MOVIEGO";
-  }, []);
 
   return (
     <div className="home-container">
+      <Helmet>
+        <title>Inicio | MOVIEGO</title>
+        <meta name="description" content="Explora el catálogo de MOVIEGO, consulta horarios de cine y descubre las películas más populares del momento." />
+        <meta name="keywords" content="cine, películas, cartelera, estrenos, entretenimiento" />
+      </Helmet>
       <div className="welcome-section">
         <h1 className="welcome-title">Bienvenido a <span>MOVIEGO</span></h1>
         <p className="welcome-subtitle">
@@ -15,14 +18,14 @@ export default function Start() {
         </p>
       </div>
 
-      <div className="content-card" style={{ maxWidth: "800px", margin: "0 auto", padding: "40px" }}>
-        <h2 style={{ color: "var(--accent-green)", marginBottom: "20px" }}>¿Qué es MOVIEGO?</h2>
-        <p style={{ color: "var(--text-muted)", lineHeight: "1.8", fontSize: "17px" }}>
+      <div className="content-card start-content-card">
+        <h2 className="start-title-accent">¿Qué es MOVIEGO?</h2>
+        <p className="start-description">
           MOVIEGO es una plataforma diseñada para entusiastas del cine que buscan estar al día con los 
           estrenos más populares, consultar horarios de funciones y gestionar su propio catálogo de películas. 
           Nuestra misión es facilitar el acceso a la información cinematográfica de manera rápida, elegante y eficiente.
         </p>
-        <p style={{ color: "var(--text-muted)", lineHeight: "1.8", fontSize: "17px", marginTop: "20px" }}>
+        <p className="start-description start-description-margin">
           Como usuario de nuestra plataforma, puedes navegar por nuestra extensa cartelera, ver detalles técnicos 
           de cada film y estar al tanto de las novedades de la industria. ¡Prepárate para vivir la mejor 
           experiencia de cine desde tu pantalla!

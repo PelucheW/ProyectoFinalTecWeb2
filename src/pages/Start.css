@@ -1,0 +1,20 @@
+.start-content-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.start-title-accent {
+  color: var(--accent-green);
+  margin-bottom: 20px;
+}
+
+.start-description {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.start-description-margin {
+  margin-top: 20px;
+}

@@ -1,13 +1,10 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
+import { Helmet } from "react-helmet-async";
 import "./Home.css"; 
 
 export default function Home() {
   const { user } = useContext(UserContext);
-
-  useEffect(() => {
-    document.title = "Dashboard | MOVIEGO";
-  }, []);
 
   const stats = [
     { title: "Películas Activas", value: "1,204" },
@@ -18,6 +15,11 @@ export default function Home() {
 
   return (
     <div className="home-container">
+      <Helmet>
+        <title>Dashboard | MOVIEGO</title>
+        <meta name="description" content="Panel de administración de MOVIEGO. Gestiona el catálogo de películas, usuarios y estadísticas de ingresos." />
+        <meta name="keywords" content="admin, dashboard, gestión de películas, estadísticas cine" />
+      </Helmet>
       <div className="welcome-section">
         <h1 className="welcome-title">
           Hola, <span>{user.name}</span> 
