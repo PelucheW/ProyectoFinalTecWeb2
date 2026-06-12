@@ -33,7 +33,7 @@
 
 .settings-profile-text p {
   font-size: 18px;
-  fontWeight: bold;
+  font-weight: bold;
 }
 
 .settings-profile-email {
@@ -47,7 +47,7 @@
   color: var(--accent-green);
   padding: 4px 8px;
   border-radius: 4px;
-  marginTop: 5px;
+  margin-top: 5px;
   display: inline-block;
 }
 
